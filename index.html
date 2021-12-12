@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- the header begins here -->
+        <header>
+            <div class="brand-logo">
+                <h1>LUXE FASHION</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">Collections</a>
+            </nav>
+            <div class="input">
+                <i class="bi bi-cart"></i>
+                <input type="search" autofocus placeholder="Search catalogue...">
+                <button class="search">Search</button>
+            </div>
+            <i class="bi bi-list" onclick="showNav()"></i>
+            <div class="mobile-nav">
+                <div class="mobile-nav-div">
+                    <i class="bi bi-x" onclick="hideNav()"></i>
+                    <a href="index.html">Home</a>
+                    <a href="#">Men</a>
+                    <a href="#">Women</a>
+                    <a href="#">Collections</a>
+                    <input type="search" autofocus placeholder="Search catalogue...">
+                    <button class="search">Search</button>
+                </div>
+            </div>
+        </header>
+
+    <!-- the jumbotron-like row below the header -->
+        <div class="row1">
+            <div class="text">
+                <p class="featured-c">Featured Collections</p>
+                <h2 class="headline">Summer </h2> <br/>
+                <h1 class="yellow"> <b>Fashion</b></h1> 
+                <button class="btn-shop">SHOP NOW</button>
+            </div>
+
+            <div class="image-div">
+                <img src="" alt="" class="row1-image">
+            </div>
+        </div>
+
+        <!-- the cards below the jumbotron -->
+        <div class="cards">
+            <div class="card">
+                <img src="images/shoes.jpg" alt="shoes">
+                <span>Collection LX71 starting from $40</span>
+                <div class="action">
+                    <a href="#">SHOES</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/clothes.jpg" alt="clothes">
+                <span>Collection LX71 starting from $40</span>
+                <div class="action">
+                    <a href="#">CLOTHES</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/bags.jpg" alt="bags">
+                <span>Collection LX71 starting from $40</span>
+                <div class="action">
+                    <a href="#">BAGS</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- the row after the cards -->
+        <div class="row2">
+            <h3 class="collections">Other Collections</h3>
+            <div class="myrow">
+                <div class="text">
+                    <h3 class="corporate-h">Corporate Wears</h3>
+                    <p class="corporate-p">
+                        Stay ever stylish in our Women's corporate collections. 
+                        Featuring top designers around the world.
+                        Stay ever stylish in our men's corporate collections. 
+                        Featuring top designers around the world.  
+                    </p>
+                    <button class="btn">Learn more</button>
+                    <button class="btn">Order now</button>
+                </div>
+    
+                <div class="image-div">
+                    <img src="images/corporate.jpg" alt="corporate wears" class="row2-image">
+                </div>
+            </div>
+        </div>
+
+        <!-- about us section -->
+        <div class="row3">
+            <h3 class="about">About Us</h3>
+            <div class="myrow w-75">
+                <div class="image-div">
+                    <img src="images/models.jpg" alt="about us" class="row3-image">
+                </div>
+    
+                <div class="text pl-20 b-yellow justify">
+                    <p>
+                        Since 2000, Luxe Fashion has remained faithful to its artisanal model and its 
+                        humanist values. The freedom to create, the constant quest for beautiful materials,
+                        and the transmission of exceptional know-how - which enable the creation of useful, and 
+                        elegant objects which stand the test of time - forge the uniqueness of Luxe Fashion.
+                        <br>
+                        Family run, independent and socially responsible, the company is committed to maintaining 
+                        the majority of its production in France, through its 43 production sites, while developing
+                        its international distribution network of 306 stores in 45 countries.           
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- customer review section -->
+            <div class="row4">
+                <div class="what"><i class="bi bi-arrow-right"></i>What Our Customers are saying;</div>
+
+                <div class="testimonials">
+                    <div class="t-row">
+                        <div class="amazon">
+                            <p class="comment">
+                                Luxe is the best in the fashion game, ranging from quality to attention to details
+                                on every designs, to their delivery speed. They have the most friendly customer care
+                                I have ever encountered in my career.
+                            </p>
+        
+                            <p class="name-title">Floyd Miles<br>-Amazon Vice President</p>
+                        </div>
+                    </div>
+    
+                    <div class="t-column">
+                        <div class="hermes">
+                            <p class="comment">
+                                Luxe is the best in the fashion game, ranging from quality to attention to details
+                                on every designs, to their delivery speed. 
+                            </p>
+                            <p class="name-title">Jane Cooper<br>-Hermes Retailer</p>
+                        </div>
+        
+                        <div class="lv">
+                            <p class="comment">
+                                Luxe is the best in the fashion game.
+                            </p>
+                            <p class="name-title">Kristin Watson<br>-LV Retailer</p>
+                        </div>
+                    </div>
+
+                    <div class="t-row">
+                        <div class="amazon">
+                            <p class="comment">
+                                Luxe is the best in the fashion game, ranging from quality to attention to details
+                                on every designs, to their delivery speed. They have the most friendly customer care
+                                I have ever encountered in my career.
+                            </p>
+        
+                            <p class="name-title">Floyd Miles<br>-Amazon Vice President</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- companies' logos section -->
+        <div class="brands">
+            <div class="logo">
+                <img src="images/lv.svg" alt="louis vuitton" class="louis-vuitton">
+            </div>
+
+            <div class="logo">
+                <img src="images/zara.svg" alt="zara" class="zara">
+            </div>
+
+            <div class="logo">
+                <img src="images/hermes.svg" alt="hermes" class="hermes">
+            </div>
+
+            <div class="logo">
+                <img src="images/gucci.svg" alt="gucci" class="gucci">
+            </div>
+
+            <div class="logo">
+                <img src="images/chanel.svg" alt="chanel" class="chanel">
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="myfooter">
+                <div class="foot1">
+                    <div class="logo-circle">
+                        <p>LF</p>
+                    </div>
+                    <h2>LUXE FASHION</h2>
+                    <p>Block 234, Toyota way, Lexus avenue, Lekki Phase 3, Lagos.</p>
+                </div>
+    
+                <div class="foot2">
+                    <div class="products">
+                        <h4>Products</h4>
+                        <p>Women</p>
+                        <p>Men</p>
+                        <p>Summer</p>
+                        <p>Categories</p>
+                    </div>
+    
+                    <div class="company">
+                        <h4>Company</h4>
+                        <p>About Us</p>
+                        <p>Blog</p>
+                        <p>Contact Us</p>
+                        <p>Pricing</p>
+                    </div>
+    
+                    <div class="support">
+                        <h4>Support</h4>
+                        <p>Help Center</p>
+                        <p>Terms of service</p>
+                        <p>Legal</p>
+                        <p>Privacy Policy</p>
+                    </div>
+                </div>
+    
+                <div class="foot3">
+                    <div class="subscribe">
+                        <p><b>Subscribe to our newsletter</b></p>
+                        <input type="text">
+                        <button class="subscribe">Subscribe!</button>
+                    </div>
+    
+                    <div class="icons">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-twitter" ></i>
+                        <i class="bi bi-linkedin"></i>
+                        <p>@Luxefashion</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Copyright &copy; <span id="year"></span>. Luxe Fashion. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            function currentYear() {
+                const date = new Date();
+                const year = `${date.getFullYear()}`;
+                return year;
+            }
+
+            document.getElementById("year").innerHTML = currentYear();
+
+            // var list = document.querySelector('.bi-list')
+            // var close = document.querySelector('.bi-close')
+            var mobileNav= document.querySelector('.mobile-nav')
+            function showNav() {
+                mobileNav.style.display = "flex";
+            }
+
+            function hideNav(){
+                mobileNav.style.display = "none";
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
+
+/* base style */
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* header */
+header{
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    height: 10vh;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 8px 2px rgb(177, 176, 176);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+div.brand-logo{
+    width: 23%;
+    margin-left: 20px;
+}
+
+div.brand-logo h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #f9c601;
+}
+
+nav{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a, .mobile-nav-div a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:active{
+    padding: 5px;
+    color: #f9c601;
+    border-bottom: 1px solid #f9c601;
+}
+
+nav a:hover, .mobile-nav-div a:hover{
+    color: #fff;
+    background: #000;
+    padding: 7px;
+}
+
+div.input{
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bi-cart{
+    padding: 7px 10px;
+    position: absolute;
+    z-index: 15;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+input{
+    max-width: 70%;
+    margin-right: 5px;
+    padding: 7px 10px 7px 30px;
+    border: 1px solid #f9c601;
+    border-radius: 20px;
+    outline: none;
+    color: #222;
+    background: #fffae6;
+    z-index: 10;
+}
+
+button.search{
+    color: #fff;
+    background: #f9c601;
+    border: none;
+    border-radius: 20px;
+    padding: 7px 10px;
+    margin-right: 10px;
+}
+
+button.search:hover{
+    background: #f1c202;
+}
+
+.bi-list, .mobile-nav{
+    display: none;
+}
+
+.bi-x{
+    top: 0;
+    right: 10px;
+    color:#f9c601;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.mobile-nav{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    background: #fff;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-nav-div{
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* first row below header */
+.row1{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+    width: 49%;
+    padding: 15px;
+}
+
+.featured-c{
+    width: 90%;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f9c601;
+}
+
+.headline{
+    /* font-family: */
+    font-size: 4rem;
+    margin: -10px auto -30px;
+}
+
+.yellow{
+    color:#f9c601;
+    font-size: 7rem;
+    margin: -10px auto -5px;
+}
+
+.btn-shop{
+    width: 40%;
+    padding: 8px 18px;
+    margin-top: 30px;
+    outline: none;
+    border: none;
+    border-radius: 9px;
+    color: #fff;
+    background: #f9c601;
+}
+
+.btn-shop:hover{
+    background: #eda601;
+}
+
+.image-div{
+    width: 49%;
+}
+
+.row1-image{
+    width: 80%;
+    margin: auto;
+    height: 65%;
+}
+
+
+/* the cards below the jumbotron */
+.cards{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.card{
+    position: relative;
+    width: 31%;
+    height: 190px;
+    margin-right: 2%;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.cards .card .action{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.cards .card:hover .action{
+    opacity: 1;
+}
+
+.cards .card .action a{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 9px;
+    padding: 5px 15px;
+}
+
+
+/* the 'about' and 'collections' section */
+.row2, .row3, .row4{
+    width: 80%;
+    margin: 80px auto;
+}
+
+.collections, .about{
+    width: 40%;
+    padding-bottom: 10px;
+    color: #f9c601;
+    border-bottom: 1px solid #f9c601;
+    margin-bottom: 20px;
+}
+
+.myrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.corporate-h{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.corporate-p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: justify;
+    margin-top: -10px;
+}
+
+.btn{
+    padding: 5px 10px;
+    border: 1px solid lightblue;
+}
+
+.btn:hover{
+    color: #222;
+    background: lightblue;
+}
+
+.row2-image{
+    width: 100%;
+    height: 100%;
+}
+
+.row3-image{
+    width: 95%;
+    margin: auto;
+    padding-right: 5px;
+    height: 85%;
+}
+
+.w-75{
+    width: 75%;
+    margin: auto;
+}
+
+.pl-20{
+    padding-left: 20px;
+}
+
+.b-yellow{
+    border-left: 2px solid #f9c601;
+}
+
+.justify{
+    text-align: justify;
+}
+
+/* what customers are saying section */
+div.what{
+    font-size: 2.5rem;
+    color: lightblue;
+    margin-bottom: 10px;
+}
+
+div.testimonials{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.t-row{
+    width: 29%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+div.amazon{
+    width: 100%;
+    background: #fff;
+    padding: 5px 15px;
+    box-shadow: 2px 2px 5px 2px lightblue;
+    border-radius: 10px;
+}
+
+div.t-column{
+    width: 40%;
+    margin: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.hermes, div.lv{
+    width: 100%;
+    margin-bottom: 4%;
+    background: #fff;
+    padding: 5px 15px;
+    box-shadow: 1px 1px 5px 2px lightblue;
+    border-radius: 10px;
+}
+
+.comment{
+    font-size: 0.85rem
+} 
+
+.name-title{
+    font-size: 0.85rem;
+    font-weight: bolder;
+}
+
+/* the brands section */
+div.brands{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff9e6;
+    padding: 30px 40px;
+}
+
+div.logo{
+    width: 18%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.logo img{
+    width: 80%;
+    height: 60%;
+    margin: auto;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    margin: 0;
+}
+
+.myfooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 25px 20px 10px;
+    color: white;
+    background-color: #565656;
+}
+
+.foot1, .foot3{
+    width: 25%;
+}
+
+.foot2{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.logo-circle{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+    border-radius: 50%;
+    color: #fff;
+    background: #f9c601;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-circle p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.foot1 h2, .foot1 p{
+    text-align: center;
+}
+
+footer p{
+    font-size: 0.9rem;
+}
+
+div.subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.subscribe{
+    padding: 5px 10px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    background: #f9c601;
+}
+
+button.subscribe:hover{
+    color: #f9c601;
+    background: #fff;
+    border: 1px solid #f9c601;
+}
+
+div.icons{
+    text-align: center;
+    margin-top: 15px;
+}
+
+div.icons i{
+    margin-right: 10px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 5px 20px;
+    color: #fff;
+    background-color: #565656;
+    /* border-top: 1px solid #fff; */
+}
+
+/* mobile view */
+@media (max-width: 768px){
+    .bi-list{
+        display: block;
+        color:#f9c601;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    div.brand-logo{
+        width: 40%;
+    }
+
+    nav, div.input{
+        display: none;
+    }
+
+    div.brand-logo h1{
+        font-weight: 600;
+        font-size: 1rem;
+    }
+
+    .row1{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .text, .image-div{
+        width: 95%;
+        margin: 30px auto;
+        padding: 5px;
+    }
+
+    .headline{
+        font-size: 2.5rem;
+        margin-bottom: 4px;
+    }
+    
+    .yellow{
+        font-size: 4rem;
+    }
+
+    .btn-shop{
+        width: 60%;
+    }
+
+    .cards{
+        width: 90%;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .card{
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .row2, .row3, .row4{
+        width: 90%;
+    }
+
+    .collections, .about{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .myrow{
+        flex-direction: column;
+    }
+
+    .corporate-h{
+        font-size: 1.3rem;
+    }
+
+    .corporate-p{
+        font-size: 0.9rem;
+    }
+
+    .b-yellow{
+        border-left: none;
+        border-top: 2px solid #f9c601;
+    }
+
+    div.what{
+        font-size: 1rem;
+    }
+
+    div.testimonials{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    div.t-column, div.t-row{
+        width: 95%;
+        margin: 2% auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    div.brands{
+        flex-direction: column;
+    }
+
+    div.logo{
+        width: 75%;
+        margin-bottom: 15px;
+    }
+
+    .myfooter{
+        flex-direction: column;
+    }
+
+    .foot1, .foot2, .foot3{
+        width: 90%;
+        margin: auto;
+    }
+
+    .logo-circle{
+        margin: 0;
+    }
+
+    .foot2{
+        flex-direction: column;
+    }
+
+    .foot1 h2, .foot1 p{
+        text-align: left;
+    }
+    
+    footer p{
+        font-size: 0.8rem;
+    }
+
+}
+
